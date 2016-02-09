@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" ng-app="photoGallery">
+<head>
+  <meta charset="utf-8">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.1.2/ui-bootstrap.min.js"></script>
+</head>
+<body>
+<div ng-controller="photoGalleryController">
+<script type="text/ng-template" id="photoModal.html">
+<div class="modal-body">
+    <img ng-src="{{modal.modalPhoto}}" class="img-responsive"/>
+</div>
+<div class="modal-footer">
+    <ul class="pager">
+      <li class="previous"><a href="#" ng-hide="modal.hidePrevious" ng-click="modal.prev()">&larr; Previous</a></li>
+      <li class="next"><a href="#" ng-hide="modal.hideNext" ng-click="modal.next()">Next &rarr;</a></li>
+    </ul>
+</div>
+</script>
+<photo-gallery-directive photo-array="photoArray"></photo-gallery-directive>
+</div>
+
+<script src="./photoGallery.js"></script>
+</body>
+</html>

@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/halversondm/angular-photo-gallery/issues"
   },
-  "homepage": "https://github.com/halversondm/angular-photo-gallery#readme"
+  "homepage": "https://github.com/halversondm/angular-photo-gallery#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
 }
