@@ -1,0 +1,44 @@
+body {
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+/* Photo Gallery CSS */
+ul li {
+    list-style: none;
+}
+
+ul li img {
+    cursor: pointer;
+}
+
+.controls {
+    display: block;
+    padding-top: 8px;
+    width: 50px;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+.next {
+    float: right;
+    text-align: right;
+}
+
+.previous {
+    float: left;
+    text-align: left;
+}
+
+.modal-body {
+    padding: 5px !important;
+}
+
+.modal-content {
+    border-radius: 0;
+}
+
+.modal-dialog img {
+    margin: 0 auto;
+    text-align: center;
+}

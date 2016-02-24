@@ -4,4 +4,10 @@
             <img ng-click="clickAction($index)" class="img-responsive" ng-src='{{photo}}'/>
         </li>
     </ul>
+    <hr>
+    <span>
+    <button ng-repeat="button in buttons" class="btn btn-primary btn-xs" ng-click="click(button)"
+            id="tpl-link{{button}}">Page {{button}}
+    </button>
+    </span>
 </div>
