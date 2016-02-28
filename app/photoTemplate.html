@@ -1,11 +1,11 @@
 <div id="photoGallery">
-    <ul class="row">
-        <li ng-repeat="photo in photoArray" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
-            <img ng-click="clickAction($index)" class="img-responsive" ng-src='{{photo}}'/>
-        </li>
-    </ul>
-    <hr>
-    <span>
+  <ul class="row">
+    <li ng-repeat="photo in photoArray" class="col-lg-2 col-md-2 col-sm-3 col-xs-4">
+      <img ng-click="clickAction($index)" class="img-responsive" ng-src='{{photo}}' />
+    </li>
+  </ul>
+  <hr>
+  <span>
     <button ng-repeat="button in buttons" class="btn btn-primary btn-xs" ng-click="click(button)"
             id="tpl-link{{button}}">Page {{button}}
     </button>
